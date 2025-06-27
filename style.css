@@ -51,7 +51,7 @@
 
   #editor-container {
     position: absolute;
-    top: 74px;
+    top: 72px;
     left: 0;
     width: 100vw;
     height: calc(100vh - 64px);
