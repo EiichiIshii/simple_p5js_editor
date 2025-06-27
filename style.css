@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border-bottom: 1.5px solid #2196f3;
+    border-bottom: 3px solid #2196f3;
     font-size: 1.7em;
     font-weight: 700;
     text-shadow: 0 2px 8px #0008;
@@ -51,7 +51,7 @@
 
   #editor-container {
     position: absolute;
-    top: 64px;
+    top: 74px;
     left: 0;
     width: 100vw;
     height: calc(100vh - 64px);
