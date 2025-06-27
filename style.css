@@ -1,0 +1,131 @@
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: #000;
+  }
+
+  #header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 30;
+    background: rgba(20, 20, 30, 0.85);
+    color: #fff;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    letter-spacing: 0.08em;
+    padding: 18px 32px 10px 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 1.5px solid #2196f3;
+    font-size: 1.7em;
+    font-weight: 700;
+    text-shadow: 0 2px 8px #0008;
+    user-select: none;
+  }
+
+  #header-title {
+    line-height: 1.1;
+  }
+
+  #author {
+    font-size: 0.5em;
+    font-weight: 400;
+    opacity: 0.7;
+    letter-spacing: 0.15em;
+    margin-left: 2px;
+    margin-top: 2px;
+    margin-bottom: -6px;
+  }
+
+  #editor-container {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 64px);
+    display: flex;
+    background: rgba(30, 30, 30, 0.7);
+    z-index: 10;
+  }
+
+  #line-numbers {
+    width: 40px;
+    min-width: 32px;
+    padding: 24px 4px 24px 8px;
+    color: #7ec3fa;
+    background: rgba(30, 30, 30, 0.85);
+    font-family: 'Fira Mono', 'Consolas', monospace;
+    font-size: 1.1em;
+    text-align: right;
+    user-select: none;
+    border: none;
+    border-right: 1.5px solid #2196f3;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  #editor {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    color: #fff;
+    background: transparent;
+    font-size: 1.1em;
+    font-family: 'Fira Mono', 'Consolas', monospace;
+    padding: 24px;
+    box-sizing: border-box;
+    z-index: 10;
+  }
+
+  #controls {
+    position: absolute;
+    top: 18px;
+    right: 40px;
+    z-index: 40;
+    display: flex;
+    gap: 12px;
+  }
+
+  .ctrl-btn {
+    font-size: 1.3em;
+    padding: 7px 18px;
+    background: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.93;
+    transition: background 0.2s, opacity 0.2s;
+    font-family: 'Segoe UI Symbol', 'Segoe UI', Arial, sans-serif;
+    font-weight: 600;
+    box-shadow: 0 2px 8px #0004;
+  }
+
+  .ctrl-btn:hover {
+    background: #1976d2;
+    opacity: 1;
+  }
+
+  canvas {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: 1;
+    pointer-events: none;
+  }

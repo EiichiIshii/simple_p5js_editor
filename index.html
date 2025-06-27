@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple p5.js Editor</title>
+  <link rel="icon" href="/favicon.ico" id="favicon">
+  <link rel="stylesheet" href="style.css">
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+</head>
+
+<body>
+  <div id="header">
+    <span id="header-title">Simple p5.js Editor</span>
+    <span id="author">by E.C.H</span>
+  </div>
+  <div id="controls">
+    <button id="run-btn" class="ctrl-btn" title="Run (Ctrl+Enter)">▶</button>
+    <button id="stop-btn" class="ctrl-btn" title="Stop">■</button>
+  </div>
+  <div id="editor-container">
+    <div id="line-numbers"></div>
+    <textarea id="editor"></textarea>
+  </div>
+  <script src="./main_script.js"></script>
+</body>
+
+</html>
