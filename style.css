@@ -7,10 +7,6 @@
   }
 
   body {
-    /*
-    width: 100vw;
-    height: 100vh;
-    */
     position: relative;
     background-color: #000;
   }
@@ -127,8 +123,10 @@
     position: fixed !important;
     top: 0;
     left: 0;
+    /*
     width: 100vw !important;
     height: 100vh !important;
+    */
     z-index: 1;
     pointer-events: none;
   }
