@@ -7,6 +7,8 @@
   }
 
   body {
+    width: 100vw;
+    height: 100vh;
     position: relative;
     background-color: #000;
   }
@@ -21,6 +23,7 @@
     color: #fff;
     font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
     letter-spacing: 0.08em;
+    /*padding: 18px 32px 10px 32px; */
     padding: 18px 32px 10px 32px;
     box-sizing: border-box;
     display: flex;
@@ -123,10 +126,8 @@
     position: fixed !important;
     top: 0;
     left: 0;
-    /*
     width: 100vw !important;
     height: 100vh !important;
-    */
     z-index: 1;
     pointer-events: none;
   }
