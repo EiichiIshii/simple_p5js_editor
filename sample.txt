@@ -1,11 +1,12 @@
 // Write your p5.js code here
 
 function setup() {
-    createCanvas(windowWidth, windowHeight);
-    background(0, 0, 0);
+  createCanvas(windowWidth, windowHeight);
+  background(0, 0, 0);
 }
+
 function draw() {
-    fill(255, 255, 255);
-    noStroke();
-    ellipse(mouseX, mouseY, 80, 80);
+  fill(255, 255, 255);
+  noStroke();
+  ellipse(mouseX, mouseY, 80, 80);
 }
