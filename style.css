@@ -56,7 +56,7 @@
     width: 100vw;
     height: calc(100vh - 64px);
     display: flex;
-    background: rgba(30, 30, 30, 0.7);
+    background: rgba(30, 30, 30, 0.5);
     z-index: 10;
   }
 
