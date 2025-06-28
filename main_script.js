@@ -52,7 +52,6 @@ function stopSketch() {
     canvases.forEach(c => c.parentNode && c.parentNode.removeChild(c));
 }
 
-
 document.getElementById('run-btn').onclick = () => {
     runSketch(editor.value);
     editor.blur();
@@ -77,3 +76,17 @@ window.addEventListener('resize', () => {
     runSketch(editor.value);
     editor.blur();
 });
+
+function OnTabKey( e, obj ){
+	if( e.keyCode!=9 ){ return; }
+	e.preventDefault();
+
+	var cursorPosition = obj.selectionStart;
+	var cursorLeft     = obj.value.substr( 0, cursorPosition );
+	var cursorRight    = obj.value.substr( cursorPosition, obj.value.length );
+
+	obj.value = cursorLeft+"\t"+cursorRight;
+	obj.selectionEnd = cursorPosition+1;
+}
+
+document.getElementById( "editor" ).onkeydown = function( e ){ OnTabKey( e, this ); }
