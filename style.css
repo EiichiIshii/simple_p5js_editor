@@ -89,6 +89,7 @@
     padding: 24px;
     box-sizing: border-box;
     z-index: 10;
+    tab-size: 2;
   }
 
   #controls {
