@@ -67,8 +67,13 @@ editor.addEventListener('keydown', e => {
         runSketch(editor.value);
         editor.blur();
     }
+    if (e.ctrlKey && e.shiftKey && (e.key === "s" || e.key === "S")) {
+        stopSketch();
+        editor.blur();
+    }
 });
 
 window.addEventListener('resize', () => {
-
+    runSketch(editor.value);
+    editor.blur();
 });
